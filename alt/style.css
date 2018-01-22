@@ -1,0 +1,22 @@
+/*********** Globals ***********/
+
+html,body { /* mehrere Selectorne */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+
+.blue {
+    background-color: gold;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
