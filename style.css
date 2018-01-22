@@ -1,0 +1,65 @@
+/* globals */
+
+
+html, body { /* mehrere Selektoren - nötig für manche telefone */
+    
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+
+
+
+body {
+    background-color: #33ccff;
+}
+
+
+.video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: auto;
+}
+
+
+.mask {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+
+.world {
+    position: absolute;
+    top: 25vh;
+    left: -5vw;
+    width: 50vh;
+    height: 50vh;
+    z-index: 10;
+    pointer-events: none;
+    animation: worldFade;
+    animation-duration: 10s;
+    
+}
+
+
+
+@keyframes worldFade {
+    0%   {opacity:0;
+            left:-10vw;}
+    100% {opacity:1;
+            left:-5vw;
+            transform: rotate(45deg);}
+}
+
+
+
+
+
